@@ -5,8 +5,8 @@
 //
 //=============================================================================
 #include "main.h"
-#include "UiTitleMenu.h"
 #include "player1.h"
+#include "UiTitleMenu.h"
 #include "GlobalFunction.h"
 #include "input.h"
 #include "fade.h"

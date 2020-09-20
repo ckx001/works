@@ -35,8 +35,8 @@ using namespace std;
 #define CURRENT_TEXTURE_PATH "\\data\\TEXTURE\\*.jpg"
 #define CURRENT_TEXTURE_PATH_TGA "\\data\\TEXTURE\\*.tga"
 #define CURRENT_TEXTURE_PATH_CHECK "data\\TEXTURE\\"
-#define CURRENT_TEXTURE_OBJ_MODEL_PATH_PNG "\\data\\MODEL\\OBJ\\*.png"
-#define CURRENT_TEXTURE_OBJ_PATH_CHECK "data\\MODEL\\OBJ\\"
+#define CURRENT_TEXTURE_OBJ_MODEL_PATH_PNG "\\data\\MODEL\\ObjModel\\*.png"
+#define CURRENT_TEXTURE_OBJ_PATH_CHECK "data\\MODEL\\ObjModel\\"
 
 #define MAX_POINT 32768
 

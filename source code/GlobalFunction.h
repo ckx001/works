@@ -35,9 +35,9 @@
 #define CURRENT_MODEL_PATH "\\data\\MODEL\\*.x"
 #define CURRENT_MODEL_PATH_CHECK "data\\MODEL\\"
 
-#define CURRENT_OBJMODEL_PATH "\\data\\MODEL\\OBJ\\*.obj"
-#define CURRENT_OBJMODEL_PATH_CHECK "data\\MODEL\\OBJ\\"
-#define CURRENT_OBJMODEL_PATH_TEXTURE "data/MODEL/OBJ/"
+#define CURRENT_OBJMODEL_PATH "\\data\\MODEL\\ObjModel\\*.obj"
+#define CURRENT_OBJMODEL_PATH_CHECK "data\\MODEL\\ObjModel\\"
+#define CURRENT_OBJMODEL_PATH_TEXTURE "data/MODEL/ObjModel/"
 
 #define MAX_UI_OBJ_EX_NUM 32768
 
