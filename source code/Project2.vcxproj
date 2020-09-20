@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6CCE34D2-55FA-4FED-889E-5C87EE0C9487}</ProjectGuid>
+    <RootNamespace>Project2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <PreprocessorDefinitions>_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <PreprocessorDefinitions>_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AllocateHierarchyClass.h" />
+    <ClInclude Include="BoxCollider.h" />
+    <ClInclude Include="bullet.h" />
+    <ClInclude Include="camera_Ex.h" />
+    <ClInclude Include="cube_Ex.h" />
+    <ClInclude Include="cylinderCollider.h" />
+    <ClInclude Include="D3DObjMesh_Ex.h" />
+    <ClInclude Include="DataBuf.h" />
+    <ClInclude Include="debugproc.h" />
+    <ClInclude Include="effect.h" />
+    <ClInclude Include="EnemyBossWolf.h" />
+    <ClInclude Include="EnemyCannibal.h" />
+    <ClInclude Include="Enemy_wolf.h" />
+    <ClInclude Include="fade.h" />
+    <ClInclude Include="fog.h" />
+    <ClInclude Include="GameAi.h" />
+    <ClInclude Include="GameEvent.h" />
+    <ClInclude Include="GameMath.h" />
+    <ClInclude Include="GlobalFunction.h" />
+    <ClInclude Include="hit_event.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="light_Ex.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="MapManager.h" />
+    <ClInclude Include="MeshSky_Ex.h" />
+    <ClInclude Include="model_Ex.h" />
+    <ClInclude Include="ObjLoader.h" />
+    <ClInclude Include="ObjObjModel_Ex.h" />
+    <ClInclude Include="obj_plant_Ex.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="player1.h" />
+    <ClInclude Include="quarTree.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Serialize.h" />
+    <ClInclude Include="shadow.h" />
+    <ClInclude Include="SoulEffect.h" />
+    <ClInclude Include="sound.h" />
+    <ClInclude Include="sphereCollider.h" />
+    <ClInclude Include="Time_c.h" />
+    <ClInclude Include="UiEnemyHp.h" />
+    <ClInclude Include="UiFontPrint.h" />
+    <ClInclude Include="UiGoods.h" />
+    <ClInclude Include="UiPlayerHp.h" />
+    <ClInclude Include="UiSmallMap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AllocateHierarchyClass.cpp" />
+    <ClCompile Include="BoxCollider.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="camera_Ex.cpp" />
+    <ClCompile Include="cube_Ex.cpp" />
+    <ClCompile Include="cylinderCollider.cpp" />
+    <ClCompile Include="D3DObjMesh_Ex.cpp" />
+    <ClCompile Include="DataBuf.cpp" />
+    <ClCompile Include="debugproc.cpp" />
+    <ClCompile Include="effect.cpp" />
+    <ClCompile Include="EnemyBossWolf.cpp" />
+    <ClCompile Include="EnemyCannibal.cpp" />
+    <ClCompile Include="Enemy_wolf.cpp" />
+    <ClCompile Include="fade.cpp" />
+    <ClCompile Include="fog.cpp" />
+    <ClCompile Include="GameAi.cpp" />
+    <ClCompile Include="GameEvent.cpp" />
+    <ClCompile Include="GameMath.cpp" />
+    <ClCompile Include="GlobalFunction.cpp" />
+    <ClCompile Include="hit_event.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="light_Ex.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MapManager.cpp" />
+    <ClCompile Include="MeshSky_Ex.cpp" />
+    <ClCompile Include="model_Ex.cpp" />
+    <ClCompile Include="ObjLoader.cpp" />
+    <ClCompile Include="ObjObjModel_Ex.cpp" />
+    <ClCompile Include="obj_plant_Ex.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="player1.cpp" />
+    <ClCompile Include="quarTree.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Serialize.cpp" />
+    <ClCompile Include="shadow.cpp" />
+    <ClCompile Include="SoulEffect.cpp" />
+    <ClCompile Include="sound.cpp" />
+    <ClCompile Include="sphereCollider.cpp" />
+    <ClCompile Include="Time_c.cpp" />
+    <ClCompile Include="UiEnemyHp.cpp" />
+    <ClCompile Include="UiFontPrint.cpp" />
+    <ClCompile Include="UiGoods.cpp" />
+    <ClCompile Include="UiPlayerHp.cpp" />
+    <ClCompile Include="UiSmallMap.cpp" />
+    <ClCompile Include="UiTitleMenu.cpp" />
+    <ClCompile Include="UiTitleMenu.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
